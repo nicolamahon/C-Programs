@@ -1,3 +1,5 @@
+// COPYRIGHT Nicola Mahon C15755031
+
 /* Program to create a simple maths quiz, including options 
 for the user to control the game via a menu.
 
