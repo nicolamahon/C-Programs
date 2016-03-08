@@ -1,3 +1,5 @@
+// COPYRIGHT Nicola Mahon C15755031
+
 /* Program to create a Lottery Game, including options 
 for the user to control the game via a menu.
 
