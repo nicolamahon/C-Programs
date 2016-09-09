@@ -1,4 +1,5 @@
 /* Program to scramble a file, byte by byte, saving as a new file with additional .sbl extension
+Program opens from command line using two parameters: the name of the .exe file (ie. scramble) and the name of the file to be scrambled
 
 Name: Nicola Mahon C15755031
 Date: 2016-04-20
