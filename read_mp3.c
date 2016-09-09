@@ -59,7 +59,7 @@ int main(int argc, char* argv[])
             "Gothic Rock", "Progressive Rock", "Psychedelic Rock", "Symphonic Rock", "Slow Rock", "Big Band", 
             "Chorus", "Easy Listening", "Acoustic", "Humour", "Speech", "Chanson", "Opera", "Chamber Music", 
             "Sonata", "Symphony", "Booty Brass", "Primus", "Porn Groove", "Satire", "Slow Jam", "Club", "Tango", 
-            "Samba", "Folklore", "Ballad", "Poweer Ballad", "Rhytmic Soul", "Freestyle", "Duet", "Punk Rock", 
+            "Samba", "Folklore", "Ballad", "Power Ballad", "Rhytmic Soul", "Freestyle", "Duet", "Punk Rock", 
             "Drum Solo", "A Capela", "Euro-House", "Dance Hall"};
             
         // variable to hold data about a song 
@@ -77,9 +77,9 @@ int main(int argc, char* argv[])
         {
             printf("\nERROR: File could not be opened.\n");
         }
-        else 
+        else // proceed with the program
         {
-            // move pointer to 128 bytes from the end of the file
+            // move pointer to 128 bytes from the end of the file, where the metadata is saved
             fseek(fp_read, -128, SEEK_END);
             
             // index variable for loops
@@ -91,7 +91,7 @@ int main(int argc, char* argv[])
                 fread(&song.tag[i], sizeof(char), 1, fp_read);
             }
             
-            // check the first 3 bytes first 3 bytes of the file into the tag array
+            // check the first 3 bytes of the file against the check_tag array, containing letters 'TAG'
             for (i=0; i<TAG; i++)
             {
                 if (song.tag[i] == check_tag[i])
