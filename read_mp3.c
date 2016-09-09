@@ -1,4 +1,5 @@
 /* Program to read and display the metadata from an MP3 file. 
+Program opens from command line using two parameters: the name of the .exe file (ie. read_mp3) and the name of the mp3 to be read
 
 Name: Nicola Mahon C15755031
 Date: 2016-05-01
